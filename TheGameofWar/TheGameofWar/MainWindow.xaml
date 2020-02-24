@@ -6,7 +6,30 @@
         xmlns:local="clr-namespace:TheGameofWar"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="https://png.pngtree.com/thumb_back/fw800/background/20190831/pngtree-cracked-wooden-texture-background-wood-plane-image_310870.jpg"/>
+    </Window.Background>
     <Grid>
-        
+        <TextBox x:Name="txtUserDeck" HorizontalAlignment="Left" Height="23" Margin="10,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCompDeck" HorizontalAlignment="Left" Height="23" Margin="10,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="txbUser" HorizontalAlignment="Left" Margin="33,340,0,0" TextWrapping="Wrap" Text="Player 1" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="txbComputer" HorizontalAlignment="Left" Margin="33,20,0,0" TextWrapping="Wrap" Text="Player 2" VerticalAlignment="Top" FontSize="20"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="193" Margin="170,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="130"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="193" Margin="170,216,0,0" Stroke="Black" VerticalAlignment="Top" Width="130"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,190,0,0" TextWrapping="Wrap" Text="WAR!" VerticalAlignment="Top" FontSize="36"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="148" Margin="315,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="99"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="148" Margin="419,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="99"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="148" Margin="579,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="99"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="148" Margin="683,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="99"/>
+        <Grid>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="148" Margin="315,261,0,0" Stroke="Black" VerticalAlignment="Top" Width="99"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="148" Margin="419,261,0,0" Stroke="Black" VerticalAlignment="Top" Width="99"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="148" Margin="579,261,0,0" Stroke="Black" VerticalAlignment="Top" Width="99"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="148" Margin="683,261,0,0" Stroke="Black" VerticalAlignment="Top" Width="99"/>
+            <TextBlock x:Name="txbMoreWar" HorizontalAlignment="Left" Margin="347,202,0,0" TextWrapping="Wrap" Text="MORE WAR!" VerticalAlignment="Top" FontSize="25"/>
+            <TextBlock x:Name="txbEvenMoreWar" HorizontalAlignment="Left" Margin="579,202,0,0" TextWrapping="Wrap" Text="EVEN MORE WAR!" VerticalAlignment="Top" FontSize="25" Width="213"/>
+
+        </Grid>
+
     </Grid>
 </Window>
