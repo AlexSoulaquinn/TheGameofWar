@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,6 +26,29 @@ namespace TheGameofWar
         public MainWindow()
         {
             InitializeComponent();
+
+
+        }
+
+        private void BtnNewGame_Click(object sender, RoutedEventArgs e)
+        {
+            int turnCount = 0;
+
+
+            for(int i = 0; i < 500; i++)
+            {
+                Game newGame = new Game(txtPlayer1.Text, txtPlayer2.Text);
+
+                while (!newGame.gameOver())
+                {
+                    newGame.playTurn();
+                }
+
+                if (newGame.turnCount < 500)
+                {
+                    turnCount += newGame.turnCount;
+                }
+            }
         }
     }
 }
